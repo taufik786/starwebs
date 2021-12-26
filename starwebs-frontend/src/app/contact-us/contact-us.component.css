@@ -1,0 +1,10 @@
+.contactForm{
+  /* border: 2px solid red; */
+}
+.social-contact{
+  border-right: 2px solid tomato;
+}
+.social-img{
+  width: 55px;
+  border-radius: 22px;
+}

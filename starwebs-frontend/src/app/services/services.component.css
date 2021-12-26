@@ -1,0 +1,7 @@
+.card-img-top{
+  height: 150px;
+}
+.card:hover{
+  cursor: pointer;
+  box-shadow:  0px 5px 15px -2px black;
+}
