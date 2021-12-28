@@ -1,0 +1,15 @@
+.tut-img{
+  height: 170px;
+}
+.card-div{
+  cursor: pointer;
+}
+.card{
+  box-shadow: 0px 0px 5px -1px rgb(0,0,0,6.5);
+}
+.card:hover{
+  box-shadow: 0px 0px 10px -1px red;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  height: 340px;
+  width: 370px;
+}

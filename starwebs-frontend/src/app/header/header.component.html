@@ -1,28 +1,44 @@
 <nav class="navbar navbar-expand-md px-5">
   <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/"><img class="logo" src="../../assets/images/starLogo.jpg" alt=""></a>
+    <a class="navbar-brand" routerLink="/"
+      ><img class="logo" src="../../assets/images/starLogo.jpg" alt=""
+    /></a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/">STARWEBS</a>
+          <a class="nav-link active" aria-current="page" routerLink="/"
+            >STARWEBS</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/articles">Articles</a>
+          <a class="nav-link" routerLink="/tutorials"
+            >Tutorials <i class="fas fa-caret-down fa-lg"></i>
+          </a>
+          <ul class="sub_tut_ul">
+            <li class="nav-item1"><a routerLink="/tutorials/html" class="nav-link1">HTML</a></li>
+            <li class="nav-item1"><a routerLink="/tutorials/css" class="nav-link1">CSS</a></li>
+            <li class="nav-item1"><a routerLink="/tutorials/javascript" class="nav-link1">JAVASCRIPT</a></li>
+          </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" routerLink="/blogs">Blogs</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contactUs">Contact Us</a>
+          <a class="nav-link" routerLink="/contact">Contact</a>
         </li>
       </ul>
       <div class="right-nav d-flex">
-        <form class="form-inline">
-          <input type="text" placeholder="Search" aria-label="Search" class="form-control">
-          <button type="submit" class="btn btn-success ml-1">Search</button>
+        <form class="form-inline" *ngIf="true">
+          <input
+            type="text"
+            placeholder="Search here!!"
+            aria-label="Search"
+            class="form-control mr-3"
+          />
+          <!-- <button type="submit" class="btn btn-success ml-1">Search</button> -->
         </form>
         <button class="btn btn-secondary mx-1">Sign Up</button>
         <button class="btn btn-primary">Login</button>

@@ -11,7 +11,7 @@
   border-radius: 40px;
 }
 .nav-link{
-  padding: 22px 30px 19px 30px;
+  padding: 22px 20px 19px 20px !important;
   color: black;
   font-family: cursive;
   font-weight: bold;
@@ -19,9 +19,36 @@
 
 .nav-link:hover{
   background-color: rgba(240, 57, 25, 0.801);
-  color: blueviolet;
+  color: tomato;
+  color: white;
 }
 .right-nav{
   position: absolute;
   right: 64px;
+}
+.sub_tut_ul{
+  position: absolute;
+  top: 64px;
+  padding: 0;
+  width: 150px;
+  background-color: whitesmoke;
+  border-radius: 3px;
+  display: none;
+}
+.nav-item1{
+  list-style: none;
+}
+.nav-link1{
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+}
+.nav-link1:hover{
+  background-color: tomato;
+  color: white;
+
+}
+.nav-item:hover .sub_tut_ul {
+  display: block;
 }
