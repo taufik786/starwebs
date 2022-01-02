@@ -8,3 +8,20 @@
   width: 55px;
   border-radius: 22px;
 }
+@media screen and (max-width: 762px){
+  .contactForm{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .social-contact{
+    border: none;
+    margin-top: 33px;
+  }
+  .social-img{
+    margin: 0px 17px;
+  }
+  .btn{
+    width: 100%;
+  }
+}

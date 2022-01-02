@@ -3,45 +3,50 @@
     <a class="navbar-brand" routerLink="/"
       ><img class="logo" src="../../assets/images/starLogo.jpg" alt=""
     /></a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/"
+        <li class="nav-item li-block res-li">
+          <a class="nav-link" aria-current="page" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
             >STARWEBS</a
           >
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/tutorials"
+        <li class="nav-item li-non">
+          <a class="nav-link" routerLink="/tutorials" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
             >Tutorials <i class="fas fa-caret-down fa-lg"></i>
           </a>
           <ul class="sub_tut_ul">
+            <li class="nav-item1"><a routerLink="/tutorials/angular" class="nav-link1">ANGULAR</a></li>
             <li class="nav-item1"><a routerLink="/tutorials/html" class="nav-link1">HTML</a></li>
             <li class="nav-item1"><a routerLink="/tutorials/css" class="nav-link1">CSS</a></li>
             <li class="nav-item1"><a routerLink="/tutorials/javascript" class="nav-link1">JAVASCRIPT</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/blogs">Blogs</a>
+        <li class="nav-item li-non">
+          <a class="nav-link" routerLink="/blogs" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Blogs</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item li-non">
           <a class="nav-link" href="#about">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/contact">Contact</a>
+        <li class="nav-item li-non">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Contact</a>
         </li>
       </ul>
       <div class="right-nav d-flex">
-        <form class="form-inline" *ngIf="true">
+        <form class="form-inline li-block" *ngIf="true">
           <input
             type="text"
             placeholder="Search here!!"
             aria-label="Search"
-            class="form-control mr-3"
+            class="form-control mr-3 res-input"
           />
           <!-- <button type="submit" class="btn btn-success ml-1">Search</button> -->
         </form>
-        <button class="btn btn-secondary mx-1">Sign Up</button>
-        <button class="btn btn-primary">Login</button>
+        <button class="btn btn-secondary mx-1 li-non">Sign Up</button>
+        <button class="btn btn-primary li-non">Login</button>
+      </div>
+      <div class="toggler">
+        <i id="icon-bar" class="icon fas fa-bars"></i>
+        <i style="display: none;" class="icon fas fa-times"></i>
       </div>
     </div>
   </div>

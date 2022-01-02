@@ -6,6 +6,7 @@ import { HtmlComponent } from './html/html.component';
 import { CssComponent } from './css/css.component';
 import { JavascriptComponent } from './javascript/javascript.component';
 import { TutorialsComponent } from './tutorials.component';
+import { AngularComponent } from './angular/angular.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { TutorialsComponent } from './tutorials.component';
     HtmlComponent,
     CssComponent,
     JavascriptComponent,
+    AngularComponent,
   ],
   imports: [
     CommonModule,
