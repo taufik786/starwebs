@@ -9,7 +9,7 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'articles', component: ArticlesComponent},
   { path: 'tutorials', loadChildren: () => import('./tutorials/tutorials.module').then(m => m.TutorialsModule) },
-  {path: 'blogs', component: BlogComponent},
+  { path: 'blogs', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) },
   {path: 'contact', component: ContactUsComponent},
   {path: 'articles/:name', component: ArticlesComponent},
   { path: '**', redirectTo: '/' }

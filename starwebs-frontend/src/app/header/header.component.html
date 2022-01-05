@@ -3,8 +3,8 @@
     <a class="navbar-brand" routerLink="/"
       ><img class="logo" src="../../assets/images/starLogo.jpg" alt=""
     /></a>
-    <div class="navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <div class="navbar-collapse" id="navbar-div">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="ul-list" (click)="hideUl()">
         <li class="nav-item li-block res-li">
           <a class="nav-link" aria-current="page" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
             >STARWEBS</a
@@ -31,22 +31,25 @@
           <a class="nav-link" routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Contact</a>
         </li>
       </ul>
-      <div class="right-nav d-flex">
-        <form class="form-inline li-block" *ngIf="true">
+        <div class="li-block seach-div">
           <input
             type="text"
             placeholder="Search here!!"
             aria-label="Search"
             class="form-control mr-3 res-input"
           />
-          <!-- <button type="submit" class="btn btn-success ml-1">Search</button> -->
-        </form>
+        </div>
+      <!-- <div class="auth-div">
         <button class="btn btn-secondary mx-1 li-non">Sign Up</button>
         <button class="btn btn-primary li-non">Login</button>
-      </div>
+      </div> -->
       <div class="toggler">
-        <i id="icon-bar" class="icon fas fa-bars"></i>
-        <i style="display: none;" class="icon fas fa-times"></i>
+        <span (click)="toggleBar()" *ngIf="showIcon">
+          <i id="icon-bar" class="icon fas fa-bars"></i>
+        </span>
+        <span (click)="closeBar()" *ngIf="crossIcon">
+          <i class="icon cross fas fa-times"></i>
+        </span>
       </div>
     </div>
   </div>

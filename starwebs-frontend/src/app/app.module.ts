@@ -11,9 +11,9 @@ import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
-import { BlogComponent } from './blog/blog.component';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,15 +24,15 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ServicesComponent,
     AboutComponent,
     ContactUsComponent,
-    FooterComponent,
-    BlogComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     RouterModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
